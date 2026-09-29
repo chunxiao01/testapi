@@ -1,0 +1,14 @@
+node_modules/
+.env
+certs/*
+certs/*.key
+certs/*.crt
+certs/*.pem
+certs/*.pfx
+uploads/*
+exports/*
+logs/*
+!uploads/.gitkeep
+!exports/.gitkeep
+*.log
+.DS_Store

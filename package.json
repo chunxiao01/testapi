@@ -1,0 +1,29 @@
+{
+  "name": "demo-server",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Node.js + Express 5 后端示例：HTTP/HTTPS/WS/WSS + JWT + 文件/Excel",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "gen-cert": "bash certs/gen-cert.sh",
+    "ws-test": "node test/ws-test.js",
+    "api-test": "bash test/api-test.sh"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "exceljs": "^4.4.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^2.0.1",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
