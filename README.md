@@ -28,7 +28,7 @@ mkdir -p certs && cd certs
 # ------------------------------------------------------------
 openssl req -x509 -newkey rsa:2048 -nodes -days 3650 \
   -keyout server.key -out server.crt \
-  -subj "/C=CN/ST=Hunan/L=Changsha/O=Demo/OU=Dev/CN=localhost" \
+  -subj "/C=CN/ST=Beijing/L=Beijing/O=Demo/OU=Dev/CN=localhost" \
   -addext "subjectAltName=DNS:localhost,DNS:*.localhost,IP:127.0.0.1,IP:::1"
 
 # ------------------------------------------------------------
